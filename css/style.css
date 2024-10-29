@@ -41,17 +41,40 @@
 
 body {
     max-width:80ch;
-    margin:40px auto;
-    padding:0 10px;
-    line-height: 1.4;
-    font:18px/1.5 var(--font);
+    margin:5em auto auto;
+    padding:0 5ch;
+    font:1.15em / 1.4em var(--font);
     background-color: var(--bg0);
     color: var(--fg1);
 }
 
-h1,h2,h3 {
-    line-height:1.2;
+/* Headers */
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1em;
+    line-height: 1.2em;
     color: var(--aqua);
+}
+h5,h6 { color: var(--gray); }
+
+/* Page title */
+header h1{
+    color:var(--orange);
+    font-size:1.5em;
+}
+
+/* Footer */
+footer { color: var(--gray) }
+
+/* Figures */
+figure {
+    text-align: center;
+    padding: 2ch;
+    color: var(--gray);
+    font-size: 0.9em;
+}
+figure img {
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 /* standard links (also includes <a class="l">) */
@@ -65,5 +88,5 @@ a.d:active, a.d:hover { text-decoration: underline var(--fg1); }
 
 /* code, codeblock */
 code { color: var(--gray); font-style: italic; font-family: var(--font-monospace); }
-pre { background: var(--bg1); font-family: var(--font-monospace); }
-pre code { color: var(--gray); font-style: normal; }
+pre { background: var(--bg1); font-family: var(--font-monospace);  display: block; white-space: pre; margin: 1em 0px; border: 1px solid var(--bg4); padding: 1em 0px 1em 4ch; overflow-x: auto; }
+pre code { font-style: normal; background: none; padding-left: 5ch; }

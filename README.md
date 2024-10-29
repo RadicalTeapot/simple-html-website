@@ -12,5 +12,5 @@ and modern.
 
 ## To do
 
-- [x] Inline code
-- [/] Code blocks
+- [ ] Home page
+- [ ] List page
